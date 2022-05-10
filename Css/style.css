@@ -1,0 +1,393 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Gabriola'; */
+    /* box-sizing: border-box; */
+    outline: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    /* border-bottom: 2px black solid; */
+    font-family: 'Gabriola';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* background-color: rgba(253, 252, 252, 0.2); */
+}
+
+/********mise en forme du header*********/
+
+header{
+    background-color: rgb(54, 56, 54);
+    /* background-image: linear-gradient(rgb(3, 3, 77), gray); */
+    width: 100%;
+    margin: 0;
+    /* padding: 1%; */
+    height: 3.2cm;
+    /* position: fixed; */
+    /* position: relative; */
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    /* padding-right: 5px; */
+    /* box-sizing: border-box; */
+}
+
+header > nav {
+    width: 100%;
+    margin: 0;
+    margin: auto;
+    /* box-sizing: border-box; */
+    /* padding-right: 3%; */
+    /*display: inline;*/
+    /* border: solid white 1px; */
+    /* display: flex; */
+    text-align: center;
+    /* height: auto; */
+}
+
+header > nav > ul{
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: -1.1cm; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header > nav li {
+        /* display: inline-block; */
+        /* margin-left: 5%; */
+        /* padding: 1%; */
+        /* width: calc(20% - 30px); */
+        /* height: 100%; */
+        padding: 5px;
+        transition: 1s ease;
+        border-radius: 5px;
+        border: solid rgb(67, 194, 67) 1px;
+        list-style-type: none;
+        /* box-sizing: border-box; */
+    }
+
+header > nav a {
+    color: rgb(67, 194, 67);
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 0.5cm;
+    /* width: 100%; */
+    /* text-transform: uppercase; */
+}
+
+#titre{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid rgb(67, 194, 67) 3px;
+    padding-bottom: 10px;
+    /* float: left; */
+    /* border: solid white 1px; */
+}
+
+header > nav li:hover a{
+    color: white;
+}
+
+header > nav li:hover{
+    background-color: rgb(67, 194, 67);
+    text-decoration: underline;
+}
+
+/*****Mise en forme de sudheader (slider)*****/
+
+#subheader{
+    width: 100%;
+    margin: auto;
+}
+
+#slider{
+    width: 99%;
+    height: 15cm;
+    /* padding: 3.4cm; */
+    margin: auto;
+    /* padding-top: 3.2cm; */
+}
+
+#slider img{
+    /* overflow: hidden; */
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 2px 20px rgba(32, 43, 32, 0.6);
+    border-radius: 0px 0px 10px 10px;
+    /* border: solid rgb(161, 160, 160) 1px; */
+
+}
+
+/*******Mise en forme du sous-menu actif lors de la connexion*****/
+
+#submenu{
+    margin-top: -0.20cm;
+    /* padding-left: 50%; */
+    /* float: right; */
+    background-color: rgb(67, 194, 67);
+    /* background: linear-gradient(rgb(67, 194, 67, 0.2),rgb(67, 194, 67)); */
+    height: auto;
+    width: 30%;
+    /* box-sizing: border-box; */
+    /* border-radius: 0 0 20px 0%; */
+    display: none;
+}
+
+#sub:hover{
+    cursor: pointer;
+}
+
+#submenu ul{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    width: 100%;
+    margin-left: -1.05cm;
+}
+
+#submenu li{
+    text-align: center;
+    margin-bottom: 7px;
+    list-style: none;
+    /* padding: 5px; */
+    border-top: 3px solid rgb(56, 65, 56);
+    border-bottom: 3px solid rgb(56, 65, 56);
+    /* border-radius: 10px; */
+    transition: 1s ease;
+    height: auto;
+    width: 100%;
+}
+
+#submenu li a{
+    color: rgb(56, 65, 56);
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    /* width: 100%; */
+}
+
+#submenu li:hover{
+    /* border-bottom: 2px solid rgb(67, 194, 67); */
+    background-color: rgb(56, 65, 56);
+}
+
+#submenu li:hover a{
+    color: white;
+}
+
+/********Mise en forme du footer********/
+
+footer{
+    height: 5cm;
+    background-color: rgb(54, 56, 54);
+    /* position: relative; */
+}
+
+/******Mise en forme de la page d'accueil******/
+
+#section{
+    width: 100%;
+    height: calc(auto - 3.2cm);
+    /* padding: 10px; */
+}
+
+#section1{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section1 > div{
+    /* display: inline-block; */
+    margin: 20px;
+    width: 40%;
+    text-align: center;
+    border-left: solid rgb(67, 194, 67) 5px;
+    border-right: solid rgb(67, 194, 67) 5px;
+    border-radius: 20px;
+    height: auto;
+}
+
+#section2{
+    width: 100%;
+    height: auto;
+    background: url("../images/section2.jpg") repeat-y;
+    background-size: 100%;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+#section2 > div{
+    /* padding: 20px; */
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+#section2 > div div{
+    /* border-radius: 50%; */
+    /* background: red; */
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#section2 > div div > span{
+    width: 45%;
+    /* border: solid rgb(67, 194, 67) 5px; */
+    margin: 5px;
+    background: rgb(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#section2 h1{
+    font-size: 35px;
+    color: rgb(67, 194, 67);
+}
+
+#section2 p{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#section3{
+    width: 100%;
+}
+
+#section3 img{
+    height: 2cm;
+    display: block;
+    border-radius: 0px 0px 5px 0px;
+    box-shadow: 1px 1px 10px rgb(67, 194, 67, 0.5);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#section3 > div{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+} 
+
+#section3 > div > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+#section3 span{
+    width: 40%;
+}
+
+/* #section{
+    display: flex;
+} */
+
+
+/********Mise en forme de l'espace personnel du client*****/
+
+#containt{
+    /* padding: 2%; */
+    padding-top: 4cm;
+    /* width: 80%; */
+    /* margin-left: 20%; */
+    box-sizing: border-box;
+}
+
+#profil{
+    float: left;
+    width: 20%;
+    height: 6cm;
+    margin-left: 10%;
+}
+
+/********Mise ne page de la page transactions***********/
+table{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+th{
+    background-color: rgb(56, 65, 56);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*********Mise ne page du forum***********/
+#forum{
+    width: 50%;
+    height: auto;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 5px 5px 30px gray;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+#reception{
+    width: 100%;
+    height: 13.5cm;
+    border-bottom: 2px solid rgb(56, 65, 56);
+    margin-bottom: 10px;
+}
+
+#message{
+    width: 70%;
+    border-radius: 20px;
+    border: 1px solid rgb(56, 65, 56);
+    float: left;
+    font-size: 20px;
+    height: 1cm;
+    overflow-y: auto;
+}
+
+#env{
+    width: 28%;
+    border: none;
+    background-color: rgb(67, 194, 67);
+    color: white;
+    border-radius: 10px;
+    height: 1cm;
+}
+
+#env:hover{
+    background-color: rgb(134, 236, 134);
+}
+
+.affiche{
+    border-radius: 0 10px 10px 10px;
+    /* border: 1px solid black; */
+    background-color: rgb(159, 226, 159);
+    max-width: 80%;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+.affiche1{
+    border-radius: 10px 0px 10px 10px;
+    /* border: 1px solid black; */
+    background-color: white;
+    max-width: 80%;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 3px;
+    /* float: right; */
+    /* position: absolute; */
+    /* right: 30%; */
+    /* margin-left: 90%; */
+}

@@ -1,0 +1,30 @@
+#containt, #containt1{
+    border-radius: 0 0 100% 0;
+    background: rgb(56, 65, 56, 0.8);
+    width: 100%;
+    margin: 0;
+}
+
+#containt{
+    height: 700px;
+}
+
+#containt2{
+    /* display: flex; */
+    box-sizing: border-box;
+    height: auto;
+    width: 60%;
+    margin: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding-top: 5%;
+}
+
+body{
+    background-color: rgb(67, 194, 67, 0.5);
+    padding: 0;
+    margin: 0;
+    transition: visibility 2s;
+    filter: blur(100%);
+}
